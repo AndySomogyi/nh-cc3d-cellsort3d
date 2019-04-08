@@ -3,7 +3,7 @@
 CC3D_DEMO_NAME=cellsort_3D
 CC3D_DEMO_FILENAME=cellsort_3D.cc3d
 CC3D_DEMO_PREFIX=Demos/Models/cellsort/cellsort_3D
-USER_DEMO_PATH=CompuCell3D_Demos/${CC3D_DEMO_NAME}
+USER_DEMO_PATH=$HOME/CompuCell3D_Demos/${CC3D_DEMO_NAME}
 
 # necessary to enforce standard convention for numeric values specification on non-English OS
 export LC_NUMERIC="C.UTF-8"
