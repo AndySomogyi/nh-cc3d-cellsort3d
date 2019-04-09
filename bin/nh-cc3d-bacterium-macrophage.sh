@@ -19,11 +19,11 @@ export COMPUCELL3D_STEPPABLE_PATH=${PREFIX_CC3D}/lib/CompuCell3DSteppables
 export LD_LIBRARY_PATH=${COMPUCELL3D_STEPPABLE_PATH}:${COMPUCELL3D_PLUGIN_PATH}:${PREFIX_CC3D}/lib/python:${PREFIX_CC3D}/lib:${VTK_LIB_DIR}:${LD_LIBRARY_PATH}
 export SWIG_LIB_INSTALL_DIR=${PREFIX_CC3D}/lib/python
 export PYTHON_MODULE_PATH=${PREFIX_CC3D}/pythonSetupScripts
-
-export DEMO_PATH=${PREFIX_CC3D}/Demos/Models/cellsort/cellsort_2D
+# Demos\Models\bacterium_macrophage
+export DEMO_PATH=${PREFIX_CC3D}/Demos/Models/bacterium_macrophage
 echo ${DEMO_PATH}
 
-export USER_DEMO_PATH=${HOME}/CompuCell3D_Demos/cellSort2D/
+export USER_DEMO_PATH=${HOME}/CompuCell3D_Demos/bacterium_macrophage/
 echo "Setting user files"
 echo ${USER_DEMO_PATH}
 
@@ -41,7 +41,7 @@ export SOSLIB_PATH=${PREFIX_CC3D}/examplesSoslib
 
 echo "CompuCell3D - version $COMPUCELL3D_MAJOR_VERSION.$COMPUCELL3D_MINOR_VERSION.$COMPUCELL3D_BUILD_VERSION"
 
-${PYTHON_EXEC} ${PREFIX_CC3D}/player5/compucell3d.pyw -i ${USER_DEMO_PATH}/cellsort_2D.cc3d -o ${USER_DEMO_PATH}/output/ -f 50 --currentDir=${PWD}
+${PYTHON_EXEC} ${PREFIX_CC3D}/player5/compucell3d.pyw -i ${USER_DEMO_PATH}/bacterium_macrophage.cc3d -o ${USER_DEMO_PATH}/output/ -f 50 --currentDir=${PWD}
 exit_code=$?
 
 exit ${exit_code}
