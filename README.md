@@ -1,2 +1,2 @@
-# CompuCell3D-NanoHub
-Repository for CompuCell3D Code for Deployment on NanoHub
+# 3D Cell Sorting wiht CompuCell3D
+Nanohhub Repository for CompuCell3D Code
